@@ -1,0 +1,73 @@
+
+
+
+Funções de primeira class (first class fucntions):
+-variaveis do tipo function as funções podem ser armazenada em variaveis
+
+
+
+erow fucntions
+so funciona em Funções anonimas
+ex:
+const quadrado = (x) => {
+    return x*x;
+}
+(para uma linha )  obs: se for um parametro somente , pode tirar o ()
+const quadrado = (x) => return x*x;
+            ou
+const quadrado = (x) => x*x;
+
+
+Imutabilidade:
+    Função impura: ex:
+        const x = 10;
+        const impuresum = y => x+y;
+
+    Função pura: ex:
+        const puresum = (x,y) => x+y;
+
+
+
+classes anonimas
+usuario = {
+    nome: 'idylicaro',
+    idade: 19,
+}
+
+REST:
+é o operador ...var
+
+SPREAD:
+como se fosse polimorfismo.ex:
+    const user1 = {
+        nome : 'icaro'
+    }
+    const user2 = {
+        ...user1,
+        sobrenome : 'santos'
+    }
+
+
+Map filter Reduce
+
+
+Map:
+    aplica uma função a cada item dentro de uma estrutura.
+    ex:
+        const nums[1,2,4,5,6,7,7];
+        cost newNums = nums.map(num => num * 2)
+    
+Filter:
+    devolve uma estrutura onde o returne for true
+    const newNums2 = nums.filter(num => num % 2 != 0)
+
+reduce:
+    retorna tudo a um unico valor
+    ex: const soma = nums.reduce((oldnum, num) => oldnum + num ,0)
+
+
+Promisse:
+    toda Promisse tem um resolve e  um reject
+    ex: new Promisse((resolve, reject)=>{
+        code...
+    }) 
