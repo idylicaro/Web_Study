@@ -71,3 +71,15 @@ Promisse:
     ex: new Promisse((resolve, reject)=>{
         code...
     }) 
+
+
+async & await
+
+async é usado para criar uma função async ex:  async function (){} || = async()=>{}
+
+await serve para indicar que tem que espera a aquela função executar.. ex: await setTimeOut(,2000);
+
+
+
+High order functions
+é funções que passam como parametro ou retornam outras funções 
