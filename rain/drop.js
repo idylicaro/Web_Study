@@ -18,7 +18,7 @@ function Drop(){
     this.show = function(){
         let thick = map(this.z, 0, 20, 1, 3);
         strokeWeight(thick);
-        stroke(245);
+        stroke(random(0,255),random(70,255),random(60,255));
         line(this.x, this.y, this.x, this.y+ this.len);
     }
 }
