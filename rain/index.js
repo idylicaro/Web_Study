@@ -2,8 +2,11 @@
 var drops = [];
 var widthScreen = screen.width;
 var heightScreen = screen.height;
+var canvas;
 function setup(){
-    createCanvas(widthScreen-16,heightScreen-200);
+    canvas = createCanvas(widthScreen,heightScreen);
+    canvas.position(0,0);
+    canvas.style('z-index','-1')
     for (let i = 0; i < 500; i++) {
         drops[i] = new Drop();
     }

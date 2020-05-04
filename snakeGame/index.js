@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(51);
+  background(49);
   userSnake.death();
   userSnake.update();
   userSnake.show();
