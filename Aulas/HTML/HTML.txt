@@ -1,0 +1,13 @@
+Corpo de um site:
+Versão do html -> <!doctype html>
+<html>
+<head>
+<nav>
+<section> <aside>
+<article>
+<footer>
+</html>
+(COMANDO PARA ATIVAR O HTTP SERVER : "http-server ."  E PARA DESATIVAR O CACHE "http-server -c-1")
+
+Toda tag html tem a propriedade ID que serve como indentificador unico dentro da pagina
+ja a propriedade CLASSE tem como objetivo separar tags para serem estilizadas no css...

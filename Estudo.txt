@@ -3,6 +3,9 @@ var width = screen.width;
 //pega a altura da resolução da tela
 var height = screen.height;
 
+ 
+tagged templates - processa o template dentro de um função (meio complicado com pouco uso)
+
 
 Funções de primeira class (first class fucntions):
 -variaveis do tipo function as funções podem ser armazenada em variaveis
@@ -53,6 +56,12 @@ como se fosse polimorfismo.ex:
 
 Map filter Reduce
 
+set - ignora repetição.
+
+for Of - é um for que acessa diretamente os valores ao contrario do for in
+ex:for(let assunto of assuntosEcma){
+	console.log(assunto)
+} //resultado "bla" \n bla \n bla
 
 Map:
     aplica uma função a cada item dentro de uma estrutura.
@@ -74,7 +83,8 @@ Promisse:
     ex: new Promisse((resolve, reject)=>{
         code...
     }) 
-
+obs: quando for recusado usar o 
+.catch()
 
 async & await
 
