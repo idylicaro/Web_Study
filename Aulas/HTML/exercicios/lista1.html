@@ -1,0 +1,55 @@
+<h2>Listas</h2>
+
+<!-- LISTAS ORDENADAS -->
+<h3>Aprovados!</h3>
+<ol>
+    <li>Idyl</li>
+    <li>Igor</li>
+    <li>Raul</li>
+</ol>
+
+<!-- LISTA NÂO ORDENADA -->
+<h3> Lista de Compra</h3>
+<ul>
+    <li>Bebidas</li>
+    <li>Queijo</li>
+    <li>Fruta</li>
+    <li>Pão</li>
+</ul>
+
+<!-- LISTA DE DEFINIÇÕES -->
+<h3>Principais termos </h3>
+<dl>
+    <dt>BaaS</dt>
+    <dd>Backend como serviço</dd>
+</dl>
+
+<!-- LISTAS ANINHADAS -->
+<h3>Projeto</h3>
+<ul>
+    <li>
+       <span wm-folder>Backend</span>
+        <ul>
+            <li>
+                <span wm-folder>app</span>
+                <ul>
+                    <li>Produto.js</li>
+                    <li>Usuario.js</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>config</span>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script>
+    // pega o elementoo que tem a marcação vm-folder e esconde os itens dentro ou mostra
+    document.querySelectorAll('[wm-folder]').forEach(folder =>{
+       folder.onclick = function(e){
+           const nextComponet = folder.nextElementSibling;
+           const display = nextComponet.style.display;
+           nextComponet.style.display = (display === 'none') ? 'block' : 'none';
+       } 
+    });
+</script>

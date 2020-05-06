@@ -11,3 +11,10 @@ Versão do html -> <!doctype html>
 
 Toda tag html tem a propriedade ID que serve como indentificador unico dentro da pagina
 ja a propriedade CLASSE tem como objetivo separar tags para serem estilizadas no css...
+
+* url absoluta tem que ter quando for usar em link , tem que ter o http:// se não vai achar que é url relativa
+
+
+* pode se tirar o action e o method da tag form e por nos botoes com o atributo formaction="" e formmethod=""
+
+* input do type="hidden" é o input invisivel que vc pode passar um valor para ele , porem na view não mostra nada

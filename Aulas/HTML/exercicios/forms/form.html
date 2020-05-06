@@ -1,0 +1,28 @@
+<h2>FORMULARIO</h2>
+
+
+<form action="http://localhost:3003/usuarios" method="POST">
+    <input type="text" name="nome">
+    <input type="email" name="email">
+    <input type="datetime-local" name="datalocal">
+    <div>
+        <input type="radio" name="tipo" value="admin">Admin
+        <input type="radio" name="tipo" value="regular">Regular
+    </div>
+    <div>
+        <select name="estado" >
+            <option value="SE">Sergipe</option>
+            <option value="SP">São Paulo</option>
+        </select>
+    </div>
+    <button>Incluir</button>
+</form>
+<style>
+    input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type=radio]{
+        display: inline;
+    }
+</style>
