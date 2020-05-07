@@ -1,0 +1,55 @@
+<video  id="meuVideo" width="800" height="450" controls controlsList="nodownload">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+</video>
+<div wm-progresso="meuVideo" class="progresso">
+    <div ></div>
+</div>
+<div>
+    <button wm-play="meuVideo" onclick="play()">
+        Play
+    </button>
+    <button wm-pause="meuVideo" onclick="pause()">
+        Pause
+    </button>
+</div>
+
+<style>
+    .progresso{
+        height: 20px;
+        width: 500px;
+        border: solid 1px #444;
+        margin: 20px;
+    }
+    .progresso > div{
+        background-color: red;
+        color: white;
+        height: 100%;
+        text-align: right;
+        font-size: 14px;
+        width: 0%;
+    }
+</style>
+
+<script>
+    function configVideo(id){
+        return document.getElementById(id);    
+    }
+    const video = configVideo('meuVideo');
+    video.oncontextmenu = () => false;
+    const bar = document.querySelector('.progresso > div');
+
+    function play(){
+        video.play();
+    }
+    function pause(){
+        video.pause();
+    }
+
+    function updateBar(currentTime){
+            bar.style.width = currentTime / (1 * (video.duration/100)) + '%';
+    }
+
+    video.ontimeupdate = () =>{
+        updateBar(video.currentTime);
+    }
+</script>
