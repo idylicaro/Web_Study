@@ -1,0 +1,32 @@
+A  preferencia de css é o qual ta sendo processado por ultimo
+
+Seletores:
+ * - é o universal , que aplica a toda a pagina
+ Elemento - que é os elementos do html 
+ .class - São classes :)
+ #id - é um mecanismo de separar um elemento de forma que ele seja unico
+ [atributo] = atributos e atributos-personalizado
+ :pseudo-class -
+ ::pseudo-elemento -
+
+ /*Combinações de seletores*/
+ + - irmão adjacente
+ ~ - irmão geral
+ > - filho
+ seletor1 seletor2 - qualquer elemento descendente 
+ , - agrupar o mesmo tipo de css para varios tipos de seletores
+
+
+ especifidades css:
+        1. regra com !important (Evitar)
+        2. seletores mais especificos [calculadora (https://specificity.keegan.st/)]
+        3. ultima regra processada(empate)
+
+    exemplo de ordem de especifidades:
+        1. inline
+        2. id
+        3. class, pseudo-class, atributo
+        4. elemento, pseudo-elementos
+
+
+

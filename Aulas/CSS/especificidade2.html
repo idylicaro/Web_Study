@@ -6,6 +6,28 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+        body{
+            font-size: 40px;
+        }
+        div{
+            background-color: #00B;
+            color: #fff;
+        }
+        div[wm-color]{
+            background-color: darkorange;
+        }
+        div:hover{
+            background-color: darkslateblue;
+        }
+        div.estilo{
+            background-color: green;
+        }
+        #unico1{background-color: #000;}
+        
+        /* a especificação do hover assim é muito fraca entao ele tem que ser procecessado por ultimo */
+        div:hover{
+            background-color: darkslateblue;
+        }
     </style>
 </head>
 
