@@ -29,4 +29,13 @@ Seletores:
         4. elemento, pseudo-elementos
 
 
+* para que o atributo herde(quando por padrão ele n vai herdar) vc pode usar o nome-Atributo: inherit;
+
+BOX MODEL:
+Margin>border>padding>content
+
+
+* para evitar o margin-collapse vc pode por um float: left / right;
+
+* display
 
