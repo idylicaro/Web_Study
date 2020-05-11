@@ -37,5 +37,29 @@ Margin>border>padding>content
 
 * para evitar o margin-collapse vc pode por um float: left / right;
 
-* display
+* display - A displaypropriedade especifica o comportamento de exibição (o tipo de caixa de renderização) de um elemento.
+            display: block;
+            display: inline
+            display: none;
+            display: inline-block;
+
+* OverFLOW:
+    overflow: hidden;
+    overflow: scroll;
+
+* Unidades: 
+    Absoluto
+        px
+    ViewPort 
+        vh  
+        vw
+        vmin
+        vmax
+    Fontes 
+        rem relativa 
+        em  relativa a tag pai
+
+    CASO ESPECIAL(%) :
+        
+
 
