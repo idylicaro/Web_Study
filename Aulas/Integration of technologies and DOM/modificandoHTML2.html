@@ -12,7 +12,11 @@
         <p>Texto Inicial</p>
     </div>
     <script>
-        // ...
+        const div = document.querySelector('div');
+        //const div = document.getElementById('div1'); //funciona porem eu não consegui acessar pelos seletores tive que por um id
+        div.innerHTML = "texto alterado";
+        div.outerHTML = "texto alterado2"; // altera tudo que tiver então o (<div><p></p></div>) isso tudo vai ser sobrescrito
+        div.insertAdjacentHTML('beforebegin','<p>Antes Inicio</p>'); 
     </script>
 </body>
 

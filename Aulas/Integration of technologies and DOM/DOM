@@ -1,2 +1,49 @@
 Document Object Model (DOM) representa a estrutura do documento HTML e o relacionamento entre os elementos (as tags).
     
+    
+        document.getElementById('primeiro').classList.add('destaque');
+
+        const divs = document.getElementsByTagName('div'); // criou uma collections HTML
+        //passando para array
+        Array.from(divs).forEach(e => e.classList.remove('destaque'));
+        //or
+        const divsArray = [...divs];
+        // retornar um htmlCollections de elementos que tem a class ultimo
+        const ultimosElementos = document.getElementsByClassName('ultimo');
+        for(let e of ultimosElementos){
+            e.classList.remove('destaque');
+            //or
+            e.classList.toggle('destaque'); //se tiver ele remove se n tiver ele add
+        }
+
+        document.querySelectorAll('#primeiro').forEach(e => e.classList.add('destaque')); //querySelectorALL retorna um nodelist
+
+
+Modificando HTML:
+    const body = document.querySelector('body');
+            const div1 = document.createElement('div');
+                div1.classList.add('destaque');
+                div1.innerHTML = 'Primeiro';  // comos e tivesse inserindo o primeiro entre os <div1>'Primeiro'</
+            const div2 = document.createElement('div');
+                div2.setAttribute('wm-atributo', 'valor');
+                div2.innerHTML = 'Segundo';
+            
+            const p = document.createElement('p');
+                p.innerHTML = 'Terceiro';
+
+            const div3 = document.createElement('div');
+                    div3.appendChild(p); //add na ultima posição do pai
+            body.appendChild(div1);
+            body.appendChild(div2);
+            body.appendChild(div3);
+
+            const texto = document.createTextNode('antes...');
+            div3.insertBefore(texto,div3.childNodes[0]);  //vai inserir antes do elemento [0]
+
+            body.removeChild(div4);
+
+        const div = document.querySelector('div');
+        //const div = document.getElementById('div1'); //funciona porem eu não consegui acessar pelos seletores tive que por um id
+        div.innerHTML = "texto alterado";
+        div.outerHTML = "texto alterado2"; // altera tudo que tiver então o (<div><p></p></div>) isso tudo vai ser sobrescrito
+        div.insertAdjacentHTML('beforebegin','<p>Antes Inicio</p>'); 

@@ -9,7 +9,28 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        const body = document.querySelector('body');
+            const div1 = document.createElement('div');
+                div1.classList.add('destaque');
+                div1.innerHTML = 'Primeiro';  // comos e tivesse inserindo o primeiro entre os <div1>'Primeiro'</
+            const div2 = document.createElement('div');
+                div2.setAttribute('wm-atributo', 'valor');
+                div2.innerHTML = 'Segundo';
+            
+            const p = document.createElement('p');
+                p.innerHTML = 'Terceiro';
+
+            const div3 = document.createElement('div');
+                    div3.appendChild(p); //add na ultima posição do pai
+            body.appendChild(div1);
+            body.appendChild(div2);
+            body.appendChild(div3);
+
+            const texto = document.createTextNode('antes...');
+            div3.insertBefore(texto,div3.childNodes[0]);  //vai inserir antes do elemento [0]
+
+            
+
     </script>
 </body>
 
