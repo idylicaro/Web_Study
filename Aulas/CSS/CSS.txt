@@ -59,7 +59,38 @@ Margin>border>padding>content
         rem relativa 
         em  relativa a tag pai
 
-    CASO ESPECIAL(%) :
-        
+    
+* Ao ter um elemento pai com a posição relativa, o filho quando se tem a posição Absoluta essa posição ela é Absoluta dentro do pai.
+
+* MediaQuery - como se fosse um if para aplicar determinado o layout (ajudando na responsividade)
 
 
+FLEX BOX(Unidimensional)
+    Quando marca um elemento com a propriedade display:flex ele se torna um flex container e tem flex item 
+    main start main size main end
+    cross start cross size cross end
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;  /*overflow agora quebra linha mesmo que a main direction esteja em row*/
+            /*flex-flow é uma junção das propriedades flex-direction e flex-wrap.*/
+
+            justify-content: center; 
+            /*justify-content define como o navegador distribui espaço entre e ao redor de itens de conteúdo ao longo do eixo principal de um contêiner flexível e o eixo embutido de um contêiner de grade.*/
+            
+
+CSS GRID(Bidimensional)
+    display: grid;
+    grid-template-columns:
+    grid-template-rows:
+
+    grid-column-start
+    grid-column-end
+    grid-row-start
+    grid-row-end
+
+    *dando nomes as linhas:
+            grid-template-columns: [inicio] 1fr 
+            [metade-1 meio-1] 1fr 
+            [metade-2 meio-2] 1fr [fim];
+    
+    grid-column-gap:20px;

@@ -5,7 +5,51 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        /* ... */
+        body{
+            font-family: 'Verdana',sans-serif;
+            color: #333;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        .curso{
+            position: relative;
+            float: left;
+            width: 250px;
+            height: 300px;
+            padding: 5px;
+            margin: 25px;
+            border: solid 1px #CCC;
+            box-shadow: 0 4px 20px 0 rgba(0,0,0,0.3);
+        }
+        .curso > img{
+            width: 100%;
+            height: 50%;
+        }
+        .curso-info{
+            padding-left: 10px;
+            height: 42%;
+            overflow-y: auto;
+        }
+        .curso-info > h4{
+            margin: 0;
+        }
+        .curso-info > p{
+            font-size: 17px;
+        }
+        .curso-preco{
+            float: right;
+        }
+        .curso-preco > .preco-de{
+            font-weight: lighter;
+            color: rgb(216, 18, 18);
+            font-size: 16px;
+            text-decoration: line-through;
+        }
+        .curso-preco > .preco-por{
+            font-weight: bolder;
+            color: #008000
+        }
     </style>
 </head>
 

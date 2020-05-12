@@ -6,7 +6,25 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        div{
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+        .big{
+            font-size: 1.5em;
+        }
+        .flex-container{
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;  /*overflow agora quebra linha mesmo que a main direction esteja em row*/
+            /*flex-flow é uma junção das propriedades flex-direction e flex-wrap.*/
+
+            justify-content: center; 
+            /*justify-content define como o navegador distribui espaço entre e ao redor de itens de conteúdo ao longo do eixo principal de um contêiner flexível e o eixo embutido de um contêiner de grade.*/
+            
+        }
     </style>
 </head>
 
