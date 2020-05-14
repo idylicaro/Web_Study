@@ -17,3 +17,12 @@ npm i --save-dev nodemon
 "multer":  //upload
 "nodemon":  //olha quando tem alteração e restarta o server
 
+
+
+Requisições ajax modernas sem framework (Fetch API):
+  fetch(url)
+    .then()
+
+Requisições com frameworks:
+  (Axios):
+    

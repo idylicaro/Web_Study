@@ -11,6 +11,19 @@
     <h1>Estados</h1>
 
     <script>
-        // ...
+        const url = 'dados/estados.json';
+        fetch(url)
+            .then(resp => resp.json())  // retorna uma promise
+            .then(estados => {
+                const itens = estados.reduce(
+                    (html, estado) =>  html + `<li>${estado.attributes.nome.value}</li>`, ''
+                    )
+                    document.body.insertAdjacentHTML('beforeend', `<ul>${itens}</ul>`);
+            })
+            .catch(error =>{
+                console.log(error);
+                
+                window.alert(error + " " + "Opss! Algum problema, tente novamente mais tarde!");
+            })
     </script>
 </body>

@@ -30,4 +30,10 @@ app.post('/upload',(req,res)=>{
 });
 
 app.get('/teste',(req, res) => res.send('OK'));
+app.post('/formulario', (req, res) => {
+    res.send({
+        ...req.body,
+        id:1
+    })
+})
 app.listen(8080, () => console.log('[RUN SERVER] - Executing...'));
