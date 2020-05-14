@@ -1,0 +1,19 @@
+Ajax é uma técnica usada com JavaScript
+Atualiza a página (ou parte dela) sem recarregar (reload)
+Comunica de forma assíncrona com um Servidor Web, ou seja, envia e recebe dados em background
+Usa muito... Callback, Promise, Async/Await
+
+servidor.Js;
+script do npm:
+"scripts": {
+    "start": "nodemon server.js"
+  },
+dependencias:
+npm i --save express body-parser multer
+npm i --save-dev nodemon
+
+"body-parser": //serve para permitir com que clientes externos possam enviar informação para sua aplicação Node. js feita com Javascript, com o body parser você vai poder receber dados de formulários, e/ou dados XML e Json de requisições HTTP.
+"express":  //servidor
+"multer":  //upload
+"nodemon":  //olha quando tem alteração e restarta o server
+
