@@ -1,0 +1,72 @@
+*Com webpack o dev tem que realmente fazer uma encadeação de arquivos de arquivos, todos derivando da entry que no caso é a main.js(default); 
+
+*vc pode ter 2 modos , produção onde gera o arquivo minificado ou o development que não é minificado
+
+*outra coisa importante é entender que parar fazer processo de biuld vc precisa de loaders.
+
+- externalizando o css:
+
+
+//webpack.config.js
+
+const webpack = require('webpack');
+
+module.exports = {
+    mode: 'production',
+    entry: './src/principal.js',
+
+    output:{
+        filename:'principal.js',
+        path: __dirname + '/dist',
+    },
+
+    module:{
+        rules:[{
+            test:/\.css$/,
+            use:[
+                'style-loader', // Adiciona o CSS a DOM injetando a tag <style>
+                'css-loader', //interpreta @import, url()...
+            ]
+        }]
+    }
+}
+
+
+
+Fazendo a config para rodar ou em desenvolvimento ou em produção
+    Usando a dependencia:"cross-env": "^7.0.2",
+    Script package.json:
+        "build": "cross-env NODE_ENV=production webpack"
+    
+    no webpack.config:
+        const modoDev = process.env.NODE_ENV !== 'production';
+
+        mode: modoDev ? 'development' : 'production',
+
+
+
+
+webpack.optimization.minimizer: https://webpack.js.org/configuration/optimization/#optimizationminimizer
+
+*minimização css = const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+*imagem loader : 
+    - adicionado nova rule :
+        ,{
+            test:/\.(png|svg|jpg|gif)$/,
+            use:['file-loader']
+        }]
+
+
+* Criando webserver(Servidor de desenvolvimento) obs: para produção usar outro Servidor:
+    npm i --save-dev webpack-dev-server
+
+    Script no npm : "start": "webpack-dev-server",
+
+    atributo add no webpack.config : 
+        devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
+    },
+    
