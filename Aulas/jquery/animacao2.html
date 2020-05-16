@@ -28,6 +28,18 @@
     <div>Animar!</div>
 
     <script>
-        // ...
+        function alterarLargura(valor,duracao,callback){
+            $('div').animate({width:`+=${valor}`},duracao,callback);
+        }
+        function moverDiagonal(valor,duracao,callback){
+            $('div').animate({top:`+=${valor}`,left:`+=${valor}`},duracao,callback);
+        }
+
+
+        alterarLargura(300,100,()=>{
+            alterarLargura(-300,1000,()=>{
+                moverDiagonal(300,600);
+            });
+        });
     </script>
 </body>

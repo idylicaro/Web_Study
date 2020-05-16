@@ -15,6 +15,10 @@
     <div id='div3'>3</div>
     <div id='resultado'></div>
     <script>
-        // ...
+        $('#div1').css('font-size', '3em');
+        $('#div1').css({'font-size':'3em', 'color':'blue'});
+        $('#div1').css('font-size', () => `${2*2}em`);
+        
+        
     </script>
 </body>
