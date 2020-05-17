@@ -1,0 +1,10 @@
+A equipe React recomenda principalmente as seguintes soluções:
+
+Se você está aprendendo React ou criando um novo single-page app, use Create React App.
+Se você está fazendo um site renderizado no servidor (SSR) com Node.js, tente Next.js.
+Se você está fazendo um site estático orientado a conteúdo, experimente Gatsby.
+Se você está montando uma biblioteca de componentes ou integrando com um código-base existente, veja Toolchains Mais Flexíveis.
+
+npm install -g create-react-app
+Criando projeto: create-react-app nome_Projeto
+
