@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 const webpack = require('webpack');
 const modoDev = process.env.NODE_ENV !== 'production';
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
