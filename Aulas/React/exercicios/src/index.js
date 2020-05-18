@@ -1,4 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-ReactDom.render(<h1>React</h1>, document.getElementById('root'));
+//import Primeiro from './componentes/Primeiro';
+//import BomDia from './componentes/BomDia';
+
+import Multi from './componentes/Multiplos'
+
+ReactDom.render(
+    <div>
+        <Multi.BoaTarde nome="icaro" />
+        <Multi.BoaNoite nome="igor" />
+    </div>
+ , document.getElementById('root'));

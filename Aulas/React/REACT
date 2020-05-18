@@ -8,3 +8,15 @@ Se você está montando uma biblioteca de componentes ou integrando com um códi
 npm install -g create-react-app
 Criando projeto: create-react-app nome_Projeto
 
+* componente Funcional :
+    export default (props) => <h1>Bom dia {props.nome}!</h1>
+    export const BomDia = props => <h1>Bom dia {props.nome}!</h1>
+
+* importando componente Funcional:
+    import BomDia from './componentes/BomDia';
+
+* Todo componente personalizado tem que começãr com letra maiúscula.
+
+Obs: o react n aceita retornar dois conjuntos de tags destintos , tem que tar envolvido ou por alguma tag ou em um react.Fragment ou em array(não recomendando)
+* <React.Fragment>  : serve parar envolver + de 1 uma jsx.
+
