@@ -20,3 +20,4 @@ Criando projeto: create-react-app nome_Projeto
 Obs: o react n aceita retornar dois conjuntos de tags destintos , tem que tar envolvido ou por alguma tag ou em um react.Fragment ou em array(não recomendando)
 * <React.Fragment>  : serve parar envolver + de 1 uma jsx.
 
+* o state pode ser alterado já o props não.
