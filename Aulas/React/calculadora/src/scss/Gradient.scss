@@ -1,0 +1,46 @@
+/* CSS */
+// --color1: hsla(211%, 18%, 96%, 1);
+// --color2: hsla(219%, 13%, 94%, 1);
+// --color3: hsla(240%, 7%, 91%, 1);
+// --color4: hsla(280%, 7%, 89%, 1);
+// --color5: hsla(321%, 9%, 90%, 1);
+// --color6: hsla(341%, 13%, 93%, 1);
+// --color7: hsla(348%, 17%, 96%, 1);
+
+/* HEX */
+$color1: #C9DEF4ff;
+$color2: #D0DBEFff;
+$color3: #D8D8E9ff;
+$color4: #DFD5E4ff;
+$color5: #E6D2DFff;
+$color6: #EECFD9ff;
+$color7: #F5CCD4ff;
+
+/* HSL */
+$color1: hsla(211%, 18%, 96%, 1);
+$color2: hsla(219%, 13%, 94%, 1);
+$color3: hsla(240%, 7%, 91%, 1);
+$color4: hsla(280%, 7%, 89%, 1);
+$color5: hsla(321%, 9%, 90%, 1);
+$color6: hsla(341%, 13%, 93%, 1);
+$color7: hsla(348%, 17%, 96%, 1);
+
+/* RGB */
+$color1: rgba(201, 222, 244, 1);
+$color2: rgba(208, 219, 239, 1);
+$color3: rgba(216, 216, 233, 1);
+$color4: rgba(223, 213, 228, 1);
+$color5: rgba(230, 210, 223, 1);
+$color6: rgba(238, 207, 217, 1);
+$color7: rgba(245, 204, 212, 1);
+
+/* GRADIENT */
+$Bgradient-top: linear-gradient(0deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-right: linear-gradient(90deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-bottom: linear-gradient(180deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-left: linear-gradient(270deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-top-right: linear-gradient(45deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-bottom-right: linear-gradient(135deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-top-left: linear-gradient(225deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-bottom-left: linear-gradient(315deg, #C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
+$Bgradient-radial: radial-gradient(#C9DEF4ff, #D0DBEFff, #D8D8E9ff, #DFD5E4ff, #E6D2DFff, #EECFD9ff, #F5CCD4ff);
